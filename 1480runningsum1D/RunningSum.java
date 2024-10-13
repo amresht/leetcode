@@ -13,21 +13,7 @@ class RunningSum {
 	// space complexity = O(1)
     }    
 	
-	
-	public int[] runningSum(int[] nums) {
-        int[] arr=new int[nums.length];
-        arr[0]=nums[0];
-		
-        for(int i=1;i<nums.length;i++){
-            int sum=0;
-            for(int j=i;j>=0;j--){
-                sum=sum+nums[j];
-            }
-            arr[i]=sum;
-        }
-        return arr;
-    }	
-	
+
 	
 	public int[] runningSumInPlace(int[] nums) {
 
