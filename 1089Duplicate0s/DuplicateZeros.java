@@ -25,7 +25,7 @@ class DuplicateZeros {
             }
         }
     }
-    // a much fast er approach.
+    // a much faster approach.
     public void duplicateZeros2(int[] arr) {
         int count=0;
         boolean isLast=false;
