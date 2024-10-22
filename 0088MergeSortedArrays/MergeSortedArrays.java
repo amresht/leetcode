@@ -9,18 +9,18 @@
 */
 public class MergeSortedArrays {
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
-        //int[] result  = new int[m+n];
-
         int r = m + n -1;
-
-        for(int i =m-1; m>=0 ; m--) {
-            System.out.println(r);
-            int j= n-1;
-            if(nums1[i] > nums2[j]) {
-                nums1[r] = nums2[j];
+        int i= m-1;
+        int j= n-1;
+        
+        while(j>=0){
+            if(i>=0 && nums1[i] > nums2[j]){
+                nums1[r] = nums1[i];
+                i--;
             }
             else {
-                nums1[r] = nums1[i];      
+                nums1[r] = nums2[j];
+                j--;
             }
             r--;
         }
@@ -33,9 +33,10 @@ public class MergeSortedArrays {
         int[] nums2 = new int[]{2,5,6};
 
         merge(nums1, 3, nums2, 3);
-        //System.out.println(results[0]);
-    
-
-    }
-
+        //print the array
+        for (int i=0; i < nums1.length;i++) {
+            System.out.print(nums1[i]);
+            System.out.print(" ");
+        }
+    }// end main
 }
