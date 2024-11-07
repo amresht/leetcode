@@ -17,7 +17,6 @@ public class DisappearedNum {
         for(int i=0; i < len; i++) {
             hasNum[nums[i]-1] = true;
         }
-
         for(int j=0; j< len ; j++){
             if(!hasNum[j])  {
                 list.add(j+1);
@@ -32,8 +31,6 @@ public class DisappearedNum {
         int[] inputs = new int[]{1,2,1,5,6,7,2,6,6};
         List<Integer>list = findDisappearedNumbers(inputs);
         System.out.println(list);
-
-        
         return;
     }    
     
