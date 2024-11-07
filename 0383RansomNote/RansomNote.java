@@ -18,7 +18,7 @@ Output: true
 
 */
 
-Class RansomNote {
+public class RansomNote {
 
     public boolean canConstruct(String ransomNote, String magazine) {
 		HashMap<Character, Integer> magazineLetters = new HashMap<>();
