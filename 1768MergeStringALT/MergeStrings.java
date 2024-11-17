@@ -18,8 +18,6 @@ public class MergeStrings {
             i++;
         }
         return sb.toString();
-
-
     }
     
 }
